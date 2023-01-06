@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="yourNumber" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.snakeandladder.PlayAreaController">
+   <children>
+      <ImageView fitHeight="631.0" fitWidth="630.0" layoutX="360.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Board.png" />
+         </image>
+      </ImageView>
+
+
+      <ImageView fx:id="player1" fitHeight="63.0" fitWidth="63.0" layoutX="315.0" layoutY="576.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@white.png" />
+         </image>
+      </ImageView>
+
+
+      <ImageView fx:id="player2" fitHeight="63.0" fitWidth="90.0" layoutX="285.0" layoutY="576.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@black.png" />
+         </image>
+      </ImageView>
+
+
+      <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="144.0" layoutY="200.0" onMouseClicked="#rollDice" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dice.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="yourNumber" layoutX="65.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="214.13671875">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
+
+      <Text fx:id="changeTurn" layoutX="65.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1's Turn!" textAlignment="CENTER" wrappingWidth="214.13671875">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
+      <Label layoutX="116.0" layoutY="429.0" prefHeight="32.0" prefWidth="112.0" text="Player 1">
+         <font>
+            <Font name="Comic Sans MS" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="116.0" layoutY="515.0" prefHeight="33.0" prefWidth="112.0" text="Player 2">
+         <font>
+            <Font name="Comic Sans MS" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="34.0" layoutY="414.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@white.png" />
+         </image>
+         <effect>
+            <DropShadow height="38.8" offsetX="7.0" offsetY="7.0" radius="17.415" width="32.86" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="34.0" layoutY="500.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@black.png" />
+         </image>
+         <effect>
+            <DropShadow height="35.83" offsetX="7.0" offsetY="7.0" radius="16.6725" width="32.86" />
+         </effect>
+      </ImageView>
+
+   </children>
+</AnchorPane>
